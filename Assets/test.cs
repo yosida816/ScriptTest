@@ -6,8 +6,14 @@ public class Boss
     private int hp = 100;          // ‘Ì—Í
     private int power = 25; // UŒ‚—Í
     private int mp = 53;  // UŒ‚—Í
+
+
+
     public void magic()
-    {if (mp>=5)
+    {
+      
+
+        if (mp>=5)
         {
             mp -= 5;
             Debug.Log("–‚–@UŒ‚‚ğ‚µ‚½Bc‚èMP‚Í"+mp+"B");
@@ -21,6 +27,7 @@ public class Boss
 
         }
     }
+
         
         
     
@@ -69,8 +76,24 @@ public class test : MonoBehaviour
             Debug.Log(array[i]);
 
 
+        Boss lastboss = new Boss();
+
+        for (int i = 0; i < 10; i++)
+            lastboss.magic();
+
+
+        lastboss.magic();
+
+
+
+
+
+
 
     }
+
+
+      
 
     // Update is called once per frame
     void Update()
